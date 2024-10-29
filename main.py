@@ -5,7 +5,7 @@ import requests
 from time import sleep
 
 # Veritabanı bağlantısı
-engine = create_engine("mysql+pymysql://remote:BIw883k8@212.31.2.93/monitor", 
+engine = create_engine("MySQLDatabase Connection", 
                        connect_args={"charset": "utf8mb4"}, echo=False)
 link_df = pd.read_sql_table("url", engine)
 
